@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="utf-8">
+    <head></head>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: darkgray;
+        }
+        .wrapper {
+            width: 1000px;
+            margin: 0 auto;
+            border: blue solid 2px;
+            position: relative;
+            background-color: #fff
+        }
+            .wrapper >.header {
+                width: 1000px;
+                height: 100px;
+                border: red solid 2px;
+            }
+                .header > .logo {
+                    border: red solid 2px;
+                    width: 100px;
+                    height: 60px;
+                    margin-left: 30px;
+                    margin-top: 20px;
+                }
+            .wrapper > .content {
+                border: red solid 2px;
+                width: 1000px;
+                overflow: hidden;
+            }
+                .content > .sidebar {
+                    float: left;
+                    width: 200px;
+                    margin-top: 0px;
+                    border: red solid 2px;
+                }
+                    .sidebar > .navigationWrapper {
+                        border: green solid 2px;
+                        width: 180px;   
+                        margin-top: 10px;
+                        margin-left: 10px;  
+                    }
+                        .navigationWrapper > .navigationBlock {
+                            width: 180px;   
+                            border: red solid 2px;
+                        }
+
+            .content > .textField {
+                border: black solid 2px;
+                width: 800px;
+                margin-left: 200px;
+            }
+            
+            .wrapper > .footer {
+                border: green solid 2px;
+                width: 1000px;
+            }
+                .footer > .copyright {
+                    position: relative;
+                    border: black solid 2px;
+                    margin-left: 800px;
+                    margin-bottom: 20px;
+                }
+    </style>
+    <body>
+        <div class="wrapper">
+            <div class="header">
+                <div class="logo">
+                    Logotype
+                </div>
+            </div>
+            <div class="content">
+                <div class="sidebar">
+                    <div class="navigationWrapper">
+                        <div class="navigationBlock"> Menu </div>
+                        <div class="navigationBlock"> Navigation </div>
+                        <div class="navigationBlock"> Links </div>
+                        <div class="navigationBlock"> Smth else </div>
+                    </div>
+                </div>
+                <div class="textField">
+                    Something very smart.
+                </div>
+            </div>
+            <div class="footer">
+                <div class="copyright">
+                    Copyright 0-2222
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
